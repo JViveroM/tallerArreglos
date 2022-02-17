@@ -1,0 +1,21 @@
+package co.edu.uelbosque.model;
+
+public class baraja {
+	
+	String [] baraja;
+	
+	public baraja() {
+		
+		baraja = new String[52];
+		
+	}
+
+	public String[] getBaraja() {
+		return baraja;
+	}
+
+	public void setBaraja(String[] baraja) {
+		this.baraja = baraja;
+	}
+	
+}
