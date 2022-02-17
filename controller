@@ -1,0 +1,31 @@
+package co.edu.uelbosque.controller;
+
+import java.util.ArrayList;
+
+import co.edu.uelbosque.model.baraja;
+
+public class controller {
+	
+	public baraja b;
+	public ArrayList mezcla;
+	private int iteraciones;
+	
+	public controller() {
+		b = new baraja();
+		mezcla = new ArrayList();
+		iteraciones = 0;
+		barajar();
+	}
+
+	public void barajar() {
+		for (int i = 0; i <=52 ; i++){
+		int numAleatorio = (int)(Math.random()*51+1);
+		if (mezcla.contains(b.getBaraja(numAleatorio))) {
+			i--;
+		}else {
+			mezcla.add( b.getBaraja(numAleatorio));
+			}
+		}
+	}
+
+}
