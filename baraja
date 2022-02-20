@@ -8,29 +8,27 @@ public class baraja {
 		
 		baraja = new String[52];
 		
-		baraja[0]="A corazon";	baraja[13]="A trebol"; 	baraja[26]="A corazon";	baraja[39]="A trebol"; 
-		baraja[1]="2 corazon";	baraja[14]="2 trebol";	baraja[27]="2 corazon";	baraja[40]="2 trebol";
-		baraja[2]="3 corazon";	baraja[15]="3 trebol";	baraja[28]="3 corazon";	baraja[41]="3 trebol";
-		baraja[3]="4 corazon";	baraja[16]="4 trebol";	baraja[29]="4 corazon";	baraja[42]="4 trebol";
-		baraja[4]="5 corazon";	baraja[17]="5 trebol";	baraja[30]="5 corazon";	baraja[43]="5 trebol";
-		baraja[5]="6 corazon";	baraja[18]="6 trebol";	baraja[31]="6 corazon";	baraja[44]="6 trebol";
-		baraja[6]="7 corazon";	baraja[19]="7 trebol";	baraja[32]="7 corazon";	baraja[45]="7 trebol";
-		baraja[7]="8 corazon";	baraja[20]="8 trebol";	baraja[33]="8 corazon";	baraja[46]="8 trebol";
-		baraja[8]="9 corazon";	baraja[21]="9 trebol";	baraja[34]="9 corazon";	baraja[47]="9 trebol";
-		baraja[9]="10 corazon";	baraja[22]="10 trebol";	baraja[35]="10 corazon";baraja[48]="10 trebol";
-		baraja[10]="J corazon";	baraja[23]="J trebol";	baraja[36]="J corazon";	baraja[49]="J trebol";
-		baraja[11]="Q corazon";	baraja[24]="Q trebol";	baraja[37]="Q corazon";	baraja[50]="Q trebol";
-		baraja[12]="K corazon";	baraja[25]="K trebol";	baraja[38]="K corazon";	baraja[51]="K trebol";
+		baraja[0]="A corazon";	baraja[13]="A trebol"; 	baraja[26]="A Diamante";	baraja[39]="A picas"; 
+		baraja[1]="2 corazon";	baraja[14]="2 trebol";	baraja[27]="2 Diamante";	baraja[40]="2 picas";
+		baraja[2]="3 corazon";	baraja[15]="3 trebol";	baraja[28]="3 Diamante";	baraja[41]="3 picas";
+		baraja[3]="4 corazon";	baraja[16]="4 trebol";	baraja[29]="4 Diamante";	baraja[42]="4 picas";
+		baraja[4]="5 corazon";	baraja[17]="5 trebol";	baraja[30]="5 Diamante";	baraja[43]="5 picas";
+		baraja[5]="6 corazon";	baraja[18]="6 trebol";	baraja[31]="6 Diamante";	baraja[44]="6 picas";
+		baraja[6]="7 corazon";	baraja[19]="7 trebol";	baraja[32]="7 Diamante";	baraja[45]="7 picas";
+		baraja[7]="8 corazon";	baraja[20]="8 trebol";	baraja[33]="8 Diamante";	baraja[46]="8 picas";
+		baraja[8]="9 corazon";	baraja[21]="9 trebol";	baraja[34]="9 Diamante";	baraja[47]="9 picas";
+		baraja[9]="10 corazon";	baraja[22]="10 trebol";	baraja[35]="10 Diamante";	baraja[48]="10 picas";
+		baraja[10]="J corazon";	baraja[23]="J trebol";	baraja[36]="J Diamante";	baraja[49]="J picas";
+		baraja[11]="Q corazon";	baraja[24]="Q trebol";	baraja[37]="Q Diamante";	baraja[50]="Q picas";
+		baraja[12]="K corazon";	baraja[25]="K trebol";	baraja[38]="K Diamante";	baraja[51]="K picas";
 	}
 
-	public String[] getBaraja() {
-		return baraja;
+	public String getBaraja(int b) {
+		return baraja [b];
 	}
 
 	public void setBaraja(String[] baraja) {
 		this.baraja = baraja;
 	}
-
-	
 	
 }
