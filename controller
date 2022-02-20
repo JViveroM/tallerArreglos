@@ -3,29 +3,40 @@ package co.edu.uelbosque.controller;
 import java.util.ArrayList;
 
 import co.edu.uelbosque.model.baraja;
+import co.edu.uelbosque.view.view;
 
 public class controller {
 	
 	public baraja b;
 	public ArrayList mezcla;
-	private int iteraciones;
+	public view v;
+	public int numAleatorio;
 	
 	public controller() {
+		
 		b = new baraja();
+		v = new view();
+		
+		numAleatorio= 0;
 		mezcla = new ArrayList();
-		iteraciones = 0;
 		barajar();
+		
 	}
 
 	public void barajar() {
-		for (int i = 0; i <=52 ; i++){
-		int numAleatorio = (int)(Math.random()*51+1);
+		numAleatorio = (int)(Math.random()*51+1);
+		mezcla.add( b.getBaraja(numAleatorio));
+		int i =0;
+		while (i<=51) { 
+		
 		if (mezcla.contains(b.getBaraja(numAleatorio))) {
 			i--;
 		}else {
 			mezcla.add( b.getBaraja(numAleatorio));
+			i++;
 			}
 		}
+		v.imprimir(mezcla);
 	}
 
 }
